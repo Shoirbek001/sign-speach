@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imo-ishora | Sign Speech App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <a href="index.html" class="logo">Sign Speech</a>
+      <nav class="site-nav" aria-label="Asosiy menyu">
+        <a href="index.html" class="nav-link">Ovozdan matnga</a>
+        <a href="sign.html" class="nav-link active">Imo-ishora</a>
+      </nav>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Tema almashtirish">
+        <span class="icon-sun">☀</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </header>
+
+    <main class="main sign-page">
+      <section class="card sign-card">
+        <h2>Matn – imo-ishora animatsiyasi</h2>
+        <p class="subtitle">Matn so'zlarga ajratiladi va har bir so'z ketma-ket animatsiya qilinadi.</p>
+
+        <div class="sign-controls">
+          <input type="text" class="input-text" id="signInput" placeholder="Matn kiriting yoki 1-sahifadan kelgan matn ishlatiladi" autocomplete="off">
+          <button type="button" class="btn btn-primary" id="playSignBtn">
+            <span class="btn-icon">▶</span>
+            <span>Animatsiyani boshlash</span>
+          </button>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="signCanvas" width="400" height="500" aria-label="2D imo-ishora animatsiyasi"></canvas>
+          <div class="current-word" id="currentWord" aria-live="polite"></div>
+        </div>
+
+        <div class="sign-legend">
+          <span><strong>Salom</strong> – qo'l silkish</span>
+          <span><strong>Rahmat</strong> – ko'krakka qo'l</span>
+          <span><strong>Ha</strong> – bosh yuqori-pastga</span>
+          <span><strong>Yo'q</strong> – bosh chap-o'ng</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Bitta sayt, ikkita sahifa:</span>
+      <a href="index.html">Ovozdan matnga</a>
+      <span>·</span>
+      <a href="sign.html">Imo-ishora</a>
+    </footer>
+  </div>
+
+  <script src="js/sign.js"></script>
+</body>
+</html>

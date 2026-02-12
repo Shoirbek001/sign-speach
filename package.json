@@ -1,0 +1,23 @@
+{
+  "name": "sign-speech-app",
+  "version": "1.0.0",
+  "description": "Ovozli nutqni matnga aylantirish va 2D imo-ishora orqali vizual ko'rsatish - kar va soqovlar uchun",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "speech-to-text",
+    "sign-language",
+    "accessibility"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
